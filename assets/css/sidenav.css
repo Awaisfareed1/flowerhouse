@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+
+body {
+    overflow: hidden;
+    position: relative;
+    position: relative;
+    font-family: 'Mulish', sans-serif;
+}
+
+.menu header {
+    background: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    color: #eee;
+}
+
+.menu li,
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu .burger {
+    position: relative;
+    font-size: 1.2em;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.menu .burger span {
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #eee;
+    margin-bottom: 5px;
+}
+
+.menu nav {
+    background-color: #333;
+    position: absolute;
+    padding: 20px;
+    padding-top: 80px;
+    height: 100vh;
+    box-sizing: border-box;
+    width: 200px;
+    top: 0;
+    z-index: 0;
+    left: -200px;
+}
+
+.menu nav a {
+    color: #fff;
+    display: block;
+    margin-bottom: 6px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+/* open state */
+.menu nav.open {
+    left: 0;
+}
+
+.menu .burger.open span:nth-child(1) {
+    transform: rotate(45deg) translateY(10px);
+}
+
+.menu .burger.open span:nth-child(2) {
+    opacity: 0;
+    width: 0;
+}
+
+.menu .burger.open span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-10px);
+}
+
+
+/* transitions */
+.menu nav {
+    transition: left ease-in 0.5s;
+}
+
+.menu .burger span {
+    transition: all ease-in 0.5s;
+}
+
+.menu .burger.open {
+    position: relative;
+    font-size: 1.2em;
+    cursor: pointer;
+    z-index: 1;
+    left: 10%;
+}
+
+.menu nav.open {
+    left: 0px;
+    top: 10%;
+    height: 100vh;
+}
+
+.menu li,
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10% 0px;
+}
+
+.montesorri {
+    height: 85vh;
+    width: 100%;
+    color: #fff;
+    background-image: url('../images/sidebgs/sidebg1.png');
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.montiHeader {
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    color: #fff;
+}
+
+.montiHeader h3 {
+    font-size: 35px;
+    font-weight: 200;
+}
+
+.montiHeader h1 {
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 80px;
+}
+
+.montiHeader h2 {
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.montiLoweText {
+    height: 40vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: #fff;
+}
+
+.montiHr {
+    height: 2px;
+    width: 30%;
+    background-color: white;
+    margin: 2% 0;
+}
+
+.montiLoweText p {
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 18px;
+}
+
+.montiIcons i {
+    font-size: 22px;
+    transition: 0.5s ease-in-out;
+    margin: 2% 3%;
+    cursor: pointer;
+}
+
+.montiIcons i:hover {
+    color: #333;
+}
+
+.nextpageIcon {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border: none;
+    border-radius: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    top: 50%;
+    right: 2%;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+    z-index: 0;
+}
+
+.nextpageIcon:hover {
+    border: 1px solid black;
+    color: white;
+    background-color: #333;
+}
+
+.prevpageIcon {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border: none;
+    border-radius: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    top: 50%;
+    left: 2%;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+    z-index: 0;
+}
+
+.prevpageIcon:hover {
+    border: 1px solid black;
+    color: white;
+    background-color: #333;
+}
+
+.monstera {
+    height: 60vh;
+    background-image: url('../images/sidebgs/bg2.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+}
+
+.monsteraLower {
+    height: 25vh;
+    background-color: #fff;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.monsteraLower i {
+    font-size: 22px;
+}
+
+.monsteraLower h5 {
+    font-size: 22px;
+    font-weight: 400;
+    margin: 2% 0px;
+}
+
+.monsteraText {
+    position: absolute;
+    bottom: -13%;
+    left: 10%;
+    color: #2c3926;
+    z-index: 1;
+}
+
+.monsteraText h1 {
+    font-size: 70px;
+    font-weight: 400;
+
+}
+
+.monsteraText h2 {
+    font-size: 70px;
+    font-weight: 400;
+    font-family: 'Sacramento', cursive;
+}
+
+.banner3 {
+    height: 85vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.upperbg {
+    background-color: #f2f2f2;
+    height: 43vh;
+}
+
+.lowerbg {
+    height: 42vh;
+    background-color: #fff;
+}
+
+.mainbg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.mainBannerBg {
+    height: 70vh;
+    width: 80%;
+    background-image: url("../images/sidebgs/mainarrivebg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.mainarrivalText {
+    position: absolute;
+    top: 0;
+    left: 20%;
+    background-color: white;
+    color: black;
+    width: 18vw;
+    height: 55vh;
+    z-index: 2;
+    padding: 2%;
+    overflow: hidden;
+}
+
+.hrbanner3 {
+    height: 3px;
+    width: 100%;
+    background-color: black;
+}
+
+.lowerbanner3Text {
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.mainarrivalText h1 {
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 35px;
+}
+
+.mainarrivalText h3 {
+    margin-top: 5%;
+    font-size: 35px;
+    font-weight: 300;
+    line-height: 35px;
+}
+
+.arrivalHr {
+    width: 100%;
+    margin: auto;
+    height: 2px;
+    background-color: #2c3926;
+}
+
+.mainarrivalText .d-flex span,
+.mainarrivalText .d-flex p {
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.arrivaltexture {
+    position: relative;
+}
+
+.mainarrivalTextLower {
+    margin-top: 40%;
+}
+
+.mainarrivalTextLower h4 {
+    font-weight: 200;
+}
+
+.mainarrivalTextLower h5 {
+    font-weight: 100;
+}
+
+@media screen and (max-width: 768px) {
+    .monsteraText {
+        position: absolute;
+        bottom: 5%;
+        left: 10%;
+        color: #2c3926;
+    }
+}
+
+@media screen and (max-width : 1024px) {
+    .mainarrivalText {
+        width: 25vw;
+        height: 55vh;
+    }
+
+    .mainarrivalTextLower {
+        margin-top: 30%;
+    }
+
+}
+
+@media screen and (max-width : 768px) {
+    .mainarrivalText {
+        width: 30vw;
+        height: 55vh;
+    }
+}
+
+@media screen and (max-width : 425px) {
+    .montiHeader h3 {
+        font-size: 30px;
+        font-weight: 200;
+    }
+
+    .montiHeader h1 {
+        font-size: 70px;
+        font-weight: 700;
+        line-height: 80px;
+    }
+
+    .montiHeader h2 {
+        font-size: 30px;
+        font-weight: 300;
+    }
+
+    .monstera {
+        height: 30vh;
+        background-image: url(../images/sidebgs/bg2.png);
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: cover;
+        width: 100%;
+        position: relative;
+    }
+
+    .monsteraLower {
+        height: 53vh;
+        background-color: #fff;
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .mainarrivalText {
+        width: 55vw;
+        height: 55vh;
+    }
+}
+
+@media screen and (max-width: 325px) {
+    .mainarrivalText {
+        width: 65vw;
+        height: 55vh;
+    }
+}

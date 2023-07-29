@@ -1,0 +1,47 @@
+.nextpageIcon {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border: none;
+    border-radius: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    top: 50%;
+    right: 2%;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+    z-index: 1;
+}
+
+.nextpageIcon:hover {
+    border: 1px solid black;
+    color: white;
+    background-color: #333;
+}
+
+.prevpageIcon {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border: none;
+    border-radius: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    top: 50%;
+    left: 2%;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+    z-index: 1;
+}
+
+.prevpageIcon:hover {
+    border: 1px solid black;
+    color: white;
+    background-color: #333;
+}

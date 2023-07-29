@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --sacramento: 'Sacramento', cursive;
+    --unna: 'Unna', serif;
+    --montesrat: 'Montserrat', sans-serif;
+    background-color: #f2f2f2;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.header {
+    height: 100vh;
+    width: 100%;
+    background-image: url('../images/Texture\ 1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+}
+
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 50px;
+    position: relative;
+    top: 5%;
+    padding: 10px 0px;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 1s ease-in-out;
+}
+
+.topnav a:hover {
+    color: #e08e9c;
+}
+
+.topnav .linkActive {
+    color: #e08e9c !important;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+.navLogo {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.headerContent {
+    height: 90vh;
+    justify-content: start;
+    align-items: center;
+}
+
+.headerinnerText h2 {
+    font-size: 80px;
+    line-height: 70px;
+    font-family: var(--unna);
+}
+
+.headerinnerText p:nth-child(2) {
+    font-family: var(--sacramento);
+    font-size: 60px;
+}
+
+.headerinnerText p:nth-child(3) {
+    font-family: var(--montesrat);
+    text-align: justify;
+    font-weight: 500;
+}
+
+.headerBtn1 {
+    background-color: #e08e9c;
+    color: white;
+    border-radius: 20px;
+    padding: 6px 30px;
+    border: none;
+}
+
+.headerBtn2 {
+    background-color: #fff;
+    color: #333;
+    border-radius: 20px;
+    padding: 6px 24px;
+    border: none;
+    font-weight: 600;
+}
+
+#sec2 {
+    height: 30vh;
+    background-image: url('../images/2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.sec2Text h2 {
+    font-size: 50px;
+    font-family: var(--unna);
+    font-weight: 600;
+    line-height: 50px;
+}
+
+.sec2Text p {
+    font-size: 55px;
+    font-family: var(--sacramento);
+    font-weight: 400;
+    line-height: 45px;
+}
+
+#sec3 {
+    padding: 5% 0px;
+    background-color: #f0f0f0;
+}
+
+.sec3topText h2 {
+    font-family: var(--unna);
+    font-family: 700;
+    font-size: 50px;
+}
+
+.sec3topText p {
+    font-family: var(--montesrat);
+    font-family: 500;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.productBtn {
+    padding: 6px 22px;
+    background-color: #a3aa68;
+    color: black;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: var(--montesrat);
+    font-weight: 600;
+}
+
+#aboutus {
+    padding: 5% 0px;
+    height: 100vh;
+    background-image: url('../images/aboutusbg.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutusImage {
+    width: 90%;
+}
+
+.aboutusText p:nth-child(1) {
+    font-size: 60px;
+    font-family: var(--sacramento);
+    font-weight: 500;
+}
+
+.aboutusText p:nth-child(2) {
+    font-family: var(--montesrat);
+    font-weight: 500;
+    text-align: justify;
+}
+
+.aboutusBtn {
+    padding: 6px 22px;
+    background-color: #333333;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: var(--montesrat);
+    font-weight: 600;
+}
+
+#emmet {
+    margin-top: 0px;
+    padding: 5% 0px;
+    height: 100vh;
+    background-image: url('../images/emmet.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.emmetText p:nth-child(1) {
+    font-size: 45px;
+    font-family: var(--sacramento);
+    font-weight: 500;
+}
+
+.emmetText p:nth-child(2) {
+    font-family: var(--montesrat);
+    font-weight: 500;
+    text-align: justify;
+}
+
+#video {
+    margin-top: 0px;
+    padding: 5% 0px;
+    height: 100vh;
+    background-image: url('../images/youtubebg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.youtubeVideo {
+    text-align: center;
+}
+
+#emmet2 {
+    margin-top: 0px;
+    padding: 5% 0px;
+    height: 100vh;
+    background-image: url('../images/endbg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#newsLetter {
+    margin-top: 0px;
+    padding: 5% 0px;
+    height: 100vh;
+    background-image: url('../images/newsLetter.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsInputs {
+    width: 100%;
+    border-radius: 0px;
+    border: 1px solid #b0b0b0;
+    padding: 16px 24px;
+    background-color: #f0f0f0;
+    color: #b0b0b0;
+    margin: 2% 0px;
+    font-weight: 500;
+}
+
+.newsTextarea {
+    width: 100%;
+    border-radius: 0px;
+    border: 1px solid #b0b0b0;
+    padding: 16px 24px;
+    background-color: #f0f0f0;
+    margin: 2% 0px;
+    color: #b0b0b0;
+    font-weight: 500;
+}
+
+.messageBtn {
+    padding: 6px 22px;
+    background-color: #a3aa68;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: var(--montesrat);
+    font-weight: 600;
+}
+
+footer {
+    padding: 5% 0px;
+    background-color: #424242;
+    color: #fff;
+}
+
+footer ul {
+    list-style-type: none;
+    text-align: start;
+}
+
+footer ul li {
+    padding: 4px 0px;
+}
+
+footer a {
+    text-decoration: none;
+    font-size: 24px;
+    font-family: var(--montesrat);
+}
+
+footer h2 {
+    font-family: var(--unna);
+    font-weight: 500;
+    font-size: 45px;
+    letter-spacing: 2px;
+}
+
+.lowerfooterText p {
+    font-size: 70px;
+    font-family: var(--sacramento);
+    font-weight: 400;
+
+}
+
+.lowerfooterText p,
+i {
+    color: #efd0ca;
+    cursor: pointer;
+}
+
+.content {
+    padding: 16px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+    border-radius: 0px;
+}
+
+.sticky+.content {
+    padding-top: 60px;
+}
+
+@media screen and (max-width: 768px) {
+    .topnav {
+        width: 100%;
+        display: block;
+        border-radius: 0px;
+        position: relative;
+        top: 0%;
+    }
+
+    .header {
+        height: 100%;
+    }
+
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+        position: relative;
+        font-size: 23px;
+        margin: 10px 0px;
+    }
+
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    #aboutus {
+        height: 100vh;
+        padding: 5% 0px;
+        text-align: center;
+    }
+
+    .aboutusImage {
+        width: 100%;
+    }
+
+    #emmet {
+        margin-top: 0px;
+        padding: 5% 0px;
+        text-align: center;
+        height: 100vh;
+        background-size: cover;
+    }
+
+    #video {
+        margin-top: 0px;
+        padding: 5% 0px;
+        height: 100vh;
+        background-image: url('../images/youtubebg.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #emmet2 {
+        background-position: unset;
+        background-size: cover;
+    }
+
+    #newsLetter {
+        margin-top: 0px;
+        padding: 5% 0px;
+        height: 100%;
+    }
+
+    footer a {
+        text-decoration: none;
+        font-size: 16px;
+    }
+    
+
+}
+
+@media screen and (max-width: 435px) {
+    #sec2 {
+        height: 40vh;
+    }
+
+    .sec2Text h2 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .sec2Text p {
+        font-size: 50px;
+        line-height: 45px;
+    }
+}
